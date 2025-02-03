@@ -30,7 +30,7 @@ class AuthController extends Controller
     public function dashboard()
     {   
         if (auth()->check()) {
-            return redirect()->route('viewsubject');
+            return view('dashboard');
         } else {
             // If not authenticated, redirect to home
             return redirect()->route('/');
