@@ -25,6 +25,7 @@ Route::middleware([
     // this is the link to subject controller
     Route::get('addSubject',[SubjectController::class,'addSubject'])->name('addSubject');
     Route::post('postSubject',[SubjectController::class,'postSubject'])->name('postSubject');
+    Route::get('postSubject',[AuthController::class,'dashboard'])->name('postSubject');
     Route::get('viewsubject',[SubjectController::class,'viewSubject'])->name('viewsubject');
     Route::get('subject/delete{id}',[SubjectController::class,'subjectdelete'])->name('subject.delete');
 
@@ -35,12 +36,23 @@ Route::middleware([
     Route::post('/postquestions', [QuestionController::class, 'postquestions'])->name('postquestions');
     Route::post('/uploadquestions', [QuestionController::class, 'uploadquestions'])->name('uploadquestions');
 
+    Route::get('/postquestions', [AuthController::class, 'dashboard'])->name('postquestions');
+    Route::get('/uploadquestions', [AuthController::class, 'dashboard'])->name('uploadquestions');
+
+
+
     Route::get('/previewquestion', [PreviewController::class, 'question'])->name('preview.question');
 
     Route::post('/preview', [PreviewController::class, 'preview'])->name('preview');
  
+    Route::post('/preview', [PreviewController::class, 'preview'])->name('preview');
+
+    Route::get('/preview', [AuthController::class, 'dashboard'])->name('preview');
+
     Route::post('/downloaddoc', [DocController::class, 'downloadDoc'])->name('downloaddoc');
+    Route::get('/downloaddoc', [AuthController::class, 'dashboard'])->name('downloaddoc');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/logout', [AuthController::class, 'dashboard'])->name('logout');
     Route::get('/dashboard', [AuthController::class, 'dashboard'])->name('dashboard');
    
 });
