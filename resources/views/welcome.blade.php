@@ -37,7 +37,7 @@
                 <a href="" class="logo d-flex align-items-center me-auto me-xl-0">
                     <!-- Uncomment the line below if you also wish to use an image logo -->
                     <!-- <img src="assets/img/logo.png" alt=""> -->
-                    <h1 class="sitename">{{ config('app.name', 'VenEdu') }}</h1>
+                    <h1 class="sitename">{{ config('app.name') }}</h1>
                     <span>.</span>
                 </a>
 
@@ -440,9 +440,9 @@
                         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
                             <div class="faq-container">
                                 <div class="faq-item faq-active">
-                                    <h3><span class="num">1.</span> <span>What is {{ config('app.name', 'VenEdu') }}, and how does it work?</span></h3>
+                                    <h3><span class="num">1.</span> <span>What is {{ config('app.name') }}, and how does it work?</span></h3>
                                     <div class="faq-content">
-                                        <p>{{ config('app.name', 'VenEdu') }} is an online educational platform that connects teachers with students for sharing resources, exam preparation, and assignment assistance. Teachers can post educational content, and students can access resources for learning.</p>
+                                        <p>{{ config('app.name') }} is an online educational platform that connects teachers with students for sharing resources, exam preparation, and assignment assistance. Teachers can post educational content, and students can access resources for learning.</p>
                                     </div>
                                     <i class="faq-toggle bi bi-chevron-right"></i>
                                 </div>
@@ -458,7 +458,7 @@
                                 <!-- End Faq item-->
             
                                 <div class="faq-item">
-                                    <h3><span class="num">3.</span> <span>Is it free to use {{ config('app.name', 'VenEdu') }}?</span></h3>
+                                    <h3><span class="num">3.</span> <span>Is it free to use {{ config('app.name') }}?</span></h3>
                                     <div class="faq-content">
                                         <p>Yes, we offer a free plan that allows you to upload and access basic educational resources. For premium features, such as access to advanced resources and analytics, you can subscribe to our Teacher or Student Premium plans.</p>
                                     </div>
@@ -873,7 +873,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-5 col-md-12 footer-about">
                         <a href="" class="logo d-flex align-items-center">
-                            <span class="sitename">{{ config('app.name', 'VenEdu') }}</span>
+                            <span class="sitename">{{ config('app.name') }}</span>
                         </a>
                         <p>Your trusted platform for efficiently typing and managing exam questions for educators, ensuring smooth academic operations.</p>
                         <div class="social-links d-flex mt-4">
@@ -908,17 +908,14 @@
         
                     <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                         <h4>Contact Us</h4>
-                        <p>A108 Adam Street</p>
-                        <p>New York, NY 535022</p>
-                        <p>United States</p>
-                        <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                        <p><strong>Email:</strong> <span>info@support{{ config('app.name') }}.com</span></p>
+                        <p>Nigeria</p>
+                        <p class="mt-4"><strong>Phone:</strong> <a href="https://wa.me/2348135836125" target="_blank">+2348135836125</a></p>
                     </div>
                 </div>
             </div>
         
             <div class="container copyright text-center mt-4">
-                <p>© <span>Copyright</span> <strong class="sitename">{{ config('app.name', 'VenEdu') }}</strong> <span>All Rights Reserved</span></p>
+                <p>© <span>Copyright</span> <strong class="sitename">{{ config('app.name') }}</strong> <span>All Rights Reserved</span></p>
                 <div class="credits">
                
                     Designed by <a href="#">Joshua Deinne</a>
