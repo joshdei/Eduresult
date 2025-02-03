@@ -26,7 +26,7 @@ class AuthController extends Controller
 
    
     
-  
+   
     public function dashboard()
     {   
         if (auth()->check()) {
