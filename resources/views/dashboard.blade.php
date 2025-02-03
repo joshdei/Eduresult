@@ -1,74 +1,118 @@
 @include('header')
 
-<!-- Main Content -->
 <div class="main-content">
   <section class="section">
-    <div class="row">
-      <div class="col-12 col-sm-12 col-lg-12">
+    <div class="row ">
+   
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div class="card">
-          <div class="card-header">
-            <h4>Question and Subject Chart</h4>
+          <div class="card-statistic-4">
+            <div class="align-items-center justify-content-between">
+                    <a href="{{route('addSubject')}}" class="btn btn-primary mt-2">Add Subject</a>
+            </div>
           </div>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-9">
-                <div id="chart1">
-                  <!-- Chart.js Chart -->
-                  <canvas id="questionSubjectChart"></canvas>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="card">
+          <div class="card-statistic-4">
+            <div class="align-items-center justify-content-between">
+            
+                    <a href="{{route('viewsubject')}}" class="btn btn-primary mt-2">View Subject</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="card">
+          <div class="card-statistic-4">
+            <div class="align-items-center justify-content-between">
+            
+                    <a href="{{route('addquestions')}}" class="btn btn-primary mt-2">Add Question</a>
+               
+              
+          
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <div class="col-lg-3">
-                <div class="row mt-5">
-                  <!-- Total Subject Count -->
-                  <div class="col-7 col-xl-7 mb-3">Total Subject Count</div>
-                  <div class="col-5 col-xl-5 mb-3">
-                    <span class="text-big">{{ $subjectCount }}</span>
-                  </div>
 
-                  <!-- Total Question Count -->
-                  <div class="col-7 col-xl-7 mb-3">Total Questions</div>
-                  <div class="col-5 col-xl-5 mb-3">
-                    <span class="text-big">{{ $questionCount }}</span>
-                  </div>
-                </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="card">
+          <div class="card-statistic-4">
+            <div class="align-items-center justify-content-between">
+            
+              <a href="{{route('preview.question')}}" class="btn btn-primary mt-2">Preview</a>
+               
+              
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+       
+            <div class="card-header-action w-100 text-end">
+              <div class="video-container">
+                <video src="intro.mp4" controls class="w-100"></video>
               </div>
+              <a href="intro.mp4" download class="btn btn-primary mt-2">Download</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
-
-<script>
-// Get data from the Blade variables
-const questionCount = {{ $questionCount }};
-const subjectCount = {{ $subjectCount }};
-
-// Chart.js setup
-const ctx = document.getElementById('questionSubjectChart').getContext('2d');
-const questionSubjectChart = new Chart(ctx, {
-  type: 'bar', // Bar chart type
-  data: {
-    labels: ['Questions', 'Subjects'], // X-axis labels
-    datasets: [{
-      label: 'Count',
-      data: [questionCount, subjectCount], // Data points for questions and subjects
-      backgroundColor: ['rgba(54, 162, 235, 0.2)', 'rgba(255, 99, 132, 0.2)'], // Bar colors
-      borderColor: ['rgba(54, 162, 235, 1)', 'rgba(255, 99, 132, 1)'], // Border colors
-      borderWidth: 1
-    }]
-  },
-  options: {
-    responsive: true,
-    scales: {
-      y: {
-        beginAtZero: true // Ensures the Y-axis starts at 0
+    
+    <style>
+      .video-container {
+        max-width: 100%;
       }
-    }
-  }
-});
-</script>
-
+    
+      .btn-primary {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        border: none;
+        border-radius: 8px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+    
+      .btn-primary:hover {
+        background-color: #0056b3;
+      }
+    
+      @media (max-width: 576px) {
+        .card-header {
+          flex-direction: column;
+          text-align: center;
+        }
+        
+        .card-header-action {
+          width: 100%;
+          margin-top: 10px;
+        }
+    
+        .btn-primary {
+          width: 100%;
+        }
+      }
+    </style>
+    
+    
+   
+  </section>
+ 
+</div>
 @include('footer')
