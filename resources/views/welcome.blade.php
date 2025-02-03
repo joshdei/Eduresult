@@ -793,8 +793,7 @@
                         <div class="info-item" data-aos="fade" data-aos-delay="200">
                             <i class="bi bi-geo-alt"></i>
                             <h3>Address</h3>
-                            <p>A108 Adam Street</p>
-                            <p>New York, NY 535022</p>
+                            <p>Nigeria</p>
                         </div>
                     </div>
                     <!-- End Info Item -->
@@ -803,10 +802,11 @@
                         <div class="info-item" data-aos="fade" data-aos-delay="300">
                             <i class="bi bi-telephone"></i>
                             <h3>Call Us</h3>
-                            <p>+1 5589 55488 55</p>
-                            <p>+1 6678 254445 41</p>
+                            <p>For call: <a href="tel:+2348135836125">+2348135836125</a></p>
+                            <p>For WhatsApp: <a href="https://wa.me/2348135836125" target="_blank">+2348135836125</a></p>
                         </div>
                     </div>
+                    
                     <!-- End Info Item -->
 
                     <div class="col-md-6">
