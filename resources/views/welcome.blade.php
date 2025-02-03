@@ -521,7 +521,7 @@
             
                 <div class="container">
                     <div class="row gy-5">
-                        <!-- Team Member 1 -->
+                        <!-- Team Member 1
                         <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
                             <div class="member-img">
                                 <img src="assets/img/team/josh.jpg" class="img-fluid" alt="Joshua Deinne" />
@@ -538,7 +538,7 @@
                                 <p>Founder and CEO, dedicated to making exam question creation and management a seamless experience for educators.</p>
                             </div>
                         </div>
-                        <!-- End Team Member -->
+                     -->
             
                         <!-- 
                         <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
