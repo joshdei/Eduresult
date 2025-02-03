@@ -46,7 +46,7 @@
                         <li><a href="#hero" class="active">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
+                       <!-- <li><a href="#pricing">Pricing</a></li>-->
                         <li><a href="#team">Team</a></li>
                      
                         <li><a href="#contact">Contact</a></li>
@@ -352,14 +352,14 @@
             </section>
             <!-- /Features Section -->
 
-            <!-- Pricing Section -->
+            <!-- Pricing Section
             <section id="pricing" class="pricing section">
-                <!-- Section Title -->
+           
                 <div class="container section-title" data-aos="fade-up">
                     <h2>Pricing</h2>
                     <p>Choose the best plan that suits your needs and start creating exam papers effortlessly.</p>
                 </div>
-                <!-- End Section Title -->
+            
 
                 <div class="container" data-aos="zoom-in" data-aos-delay="100">
                     <div class="row g-4">
@@ -380,7 +380,7 @@
                                 <div class="text-center"><a href="#" class="buy-btn">Get Started</a></div>
                             </div>
                         </div>
-                        <!-- End Pricing Item -->
+                      
 
                         <div class="col-lg-4">
                             <div class="pricing-item featured">
@@ -400,7 +400,7 @@
                                 <div class="text-center"><a href="#" class="buy-btn">Get Started</a></div>
                             </div>
                         </div>
-                        <!-- End Pricing Item -->
+                   
 
                         <div class="col-lg-4">
                             <div class="pricing-item">
@@ -419,11 +419,11 @@
                                 <div class="text-center"><a href="#" class="buy-btn">Get Started</a></div>
                             </div>
                         </div>
-                        <!-- End Pricing Item -->
+                  
                     </div>
                 </div>
             </section>
-            <!-- /Pricing Section -->
+            -->
             <!-- Faq Section -->
             <section id="faq" class="faq section">
                 <div class="container">

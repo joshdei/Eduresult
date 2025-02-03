@@ -140,11 +140,11 @@
        
           <form method="POST" action="{{ route('logout') }}" x-data>
             @csrf
-
+          <!--
             <a href="{{ route('logout') }}" @click.prevent="$root.submit();" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
                 Logout
               </a>
-            
+            -->
         </form>
         
         </div>

@@ -32,13 +32,13 @@
           </ul>
         </li>
      
-      
+      <!--
               <form action="{{ route('logout') }}" method="post">
                 @csrf
                 <button type="submit" class="btn btn-outline-success ">Logout</button>
                 </form>
 
-           
+              -->
           </ul>
         </li>
        
