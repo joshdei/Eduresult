@@ -27,7 +27,7 @@
         <li class="dropdown">
           <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>Preview</span></a>
           <ul class="dropdown-menu">
-            <li><a class="nav-link" href="{{route('preview.question')}}">Qestion</a></li>
+            <li><a class="nav-link" href="{{route('preview.question')}}">Question</a></li>
            
           </ul>
         </li>
