@@ -813,8 +813,8 @@
                         <div class="info-item" data-aos="fade" data-aos-delay="400">
                             <i class="bi bi-envelope"></i>
                             <h3>Email Us</h3>
-                            <p>info@ {{ config('app.name') }}.com</p>
-                            <p>support@ {{ config('app.name') }}.com</p>
+                            <p>joshuadeinne@gmail.com</p>
+                            <p>joshuadeinne@gmail.com</p>
                         </div>
                     </div>
                     <!-- End Info Item -->
