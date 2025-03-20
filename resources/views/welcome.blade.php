@@ -793,7 +793,7 @@
                         <div class="info-item" data-aos="fade" data-aos-delay="200">
                             <i class="bi bi-geo-alt"></i>
                             <h3>Address</h3>
-                            <p>Nigeria</p>
+                            <p>Plot Ugbesia New Layout warri</p>
                         </div>
                     </div>
                     <!-- End Info Item -->
